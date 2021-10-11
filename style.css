@@ -98,6 +98,7 @@
     background: #0f0f20;
     color: whitesmoke;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -206,7 +207,7 @@ hr {
     background-color: whitesmoke;
     border-radius: 10px;
     margin: 02%;
-    margin-top: 60px;
+    margin-top: 50px;
     opacity: 1;
     color: #0f0f20;
     box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5),
