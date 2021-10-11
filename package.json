@@ -1,0 +1,22 @@
+{
+  "name": "cv1.2-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simon-Libert/cv1.2-main.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Simon-Libert/cv1.2-main/issues"
+  },
+  "homepage": "https://github.com/Simon-Libert/cv1.2-main#readme",
+  "dependencies": {
+    "typed.js": "^2.0.12"
+  }
+}

@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:wght@100&family=Rambla&display=swap');
+
+
+.toggle {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+}
+
+.checkbox {
+    display: none;
+}
+
+.label {
+    height: 20px;
+    width: 40px;
+    background: #a5a2a1;
+    padding: 5px 8px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transform: scale(1.2);
+    box-shadow: 2px 1px 1px #333;
+}
+
+.label .ball {
+    background: #0f0f20;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    right: 20px;
+    transform: translateX(0px);
+    transition: transform 0.4s cubic-bezier(.45, -1.12, .35, 1.78);
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(20px);
+}
+
+
+
+/* **************************************DARK MODE ************************************************* */
+
+.dark {
+    background: #0f0f20;
+    color: whitesmoke;
+}
+
+.dark main {
+    background: #0f0f20;
+    color: whitesmoke;
+}
+
+.dark .label {
+    box-shadow: 2px 1px 1px #0f0f20;
+}
+
+.dark .ball {
+    background: whitesmoke;
+}
+
+
+.dark #hobbies {
+    background: #0f0f20;
+    color: whitesmoke;
+}
+
+.dark #skills {
+    background: #0f0f20;
+    color: whitesmoke;
+}
+
+.dark #exps {
+    background: #0f0f20;
+    color: whitesmoke;
+}
+
+.dark #me {
+    background: #0f0f20;
+    color: whitesmoke;
+}
+
+.dark h5 {
+    background: #0f0f20;
+    color: whitesmoke;
+}
+
+.dark .fa {
+    background: #0f0f20;
+    color: whitesmoke;
+}
+
+.dark .typed {
+    background: #0f0f20;
+    color: whitesmoke;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #0f0f20;
+    background-color: whitesmoke;
+    font-family: 'rambla', sans-serif;
+
+}
+
+h1 {
+    color: #0f0f20;
+    padding: 90px 0px 10px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4.3em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Audiowide, sans serif';
+    padding: 20px;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #0f0f20;
+}
+
+
+h3 {
+    font-family: 'Audiowide, sans-serif';
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 1px;
+    color: #0f0f20;
+
+}
+
+h4 {
+    color: #0f0f20;
+}
+
+/* list style none = pas de puces qui s'affichent  */
+li {
+
+    list-style-type: none;
+}
+
+/* ********************************** HEADER ************************************** */
+
+
+.navbar {
+    opacity: 0.9;
+    height: 42px;
+    transition: 0.7s;
+
+}
+
+.navbar-nav {
+    width: 80% !important;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+header {
+    color: #0f0f20;
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+
+}
+
+#cover {
+    background: url('./media/couv2.webp') no-repeat fixed 50% 50%;
+    z-index: -2;
+    position: fixed;
+    background-color: whitesmoke;
+    color: #0f0f20;
+    top: -50vh;
+    width: 100vw;
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.1) blur(2px);
+    opacity: 0.4;
+
+}
+
+hr {
+    height: 1px;
+    background-color: #a5a2a1;
+    width: 25%;
+    margin: 0 auto;
+    /*margin 0 auto = centrée*/
+}
+
+.presentation {
+
+    color: #0f0f20;
+    height: 400px;
+    margin-top: 20px;
+
+}
+
+#me {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 02%;
+    margin-top: 60px;
+    opacity: 1;
+    color: #0f0f20;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5),
+        -8px 8px 4px rgba(0, 0, 0, 0.5);
+}
+
+.fa {
+    color: #0f0f20;
+
+}
+
+a[href^="mailto:"] {
+    font-family: sans-serif;
+    color: #0f0f20;
+
+}
+
+a[href^="mailto:"]:hover {
+
+    color: #0f0f20;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+}
+
+a[href^="tel:"] {
+    font-family: sans-serif;
+    color: #0f0f20;
+
+}
+
+a[href^="tel:"]:hover {
+    color: #0f0f20;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+}
+
+a[href^="./media/Simon CV.pdf"] {
+    font-family: sans-serif;
+    color: #0f0f20;
+}
+
+a[href^="./media/Simon CV.pdf"]:hover {
+    color: #0f0f20;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.infos {
+    color: #0f0f20;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    /* flex direction et justify content permette de gérer l'espacement entre les infos et l'alignement*/
+}
+
+.photo {
+
+    position: relative;
+    /* .photo deals with tt le cadre de la photo*/
+}
+
+.photo img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: auto;
+    max-width: 90%;
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgb(68, 67, 67);
+    /* absolute permet de gérer totalement la position de la photo*/
+}
+
+/* header .button {
+    margin-top: 1px;
+    align-items: center;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+header .button a { /*a = texte du button*/
+/* border-radius: 10px;
+    padding: 20px 200px;
+    width: 150px;
+    color: #0f0f20;
+}
+
+header .button:hover a {
+    background: #0f0f20;
+    color: whitesmoke;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+} */
+
+/* *****************************************************EXP****************************************************** */
+li.liststyleexp {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.titlexp {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.xppro {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.xppro>* {
+    margin: 0 10px;
+    /* flex: 1; */
+
+}
+
+
+
+#exps {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 02%;
+    margin-top: 0px;
+    opacity: 0.9;
+    color: #0f0f20;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5),
+        -8px 8px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+/* **********************************************SKILLS ************************************************************ */
+ul.liststyle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.skill {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.skill>* {
+    margin: 0 10px;
+    /* flex: 1; */
+
+}
+
+#skills {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 02%;
+    margin-top: 0px;
+    color: #0f0f20;
+    opacity: 0.9;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5),
+        -8px 8px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* **********************************qualités barres compétence ***************************************** */
+
+/* #qualités {
+    background-color: whitesmoke ;
+	margin: 02%;
+	margin-top: 0px;
+    color: noir;
+    opacity: 0.9;
+	box-shadow: 8px 8px 4px rgba(0,0,0,0.5),
+	-8px 8px 4px rgba(0,0,0,0.5);
+}
+ */
+/* .titlequalités {
+    text-align: center;
+} */
+
+#qualités {
+    padding: 80px 80px 80px 50px;
+    margin: 20px 0 0 6%;
+    height: 620px;
+    /* width: 100%; */
+    /* penser à chnager la valeur avec media queries */
+    max-width: 640px;
+    background: linear-gradient(131deg, #f12711 0%, rgba(245, 175, 25, 0.42) 99%);
+    clip-path: polygon(0 9%, 90% 3%, 83% 98%, 0 96%);
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; */
+
+}
+
+.titlequality {
+    color: #0f0f20;
+    text-align: center;
+
+}
+
+#qualités .bar {
+    letter-spacing: 0.1em;
+    margin-right: 3%;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; */
+
+}
+
+#qualités p {
+    color: #0f0f20;
+    padding-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    /*  display: flex;
+ flex-wrap: wrap;
+ flex-direction: column; */
+}
+
+.quality {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ***************************************FORMATION ****************************************************** */
+
+#formation {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    float: right;
+    /* padding: 110px 0px 60px 50px; */
+    padding: 50px 40px 30px 50px;
+    /* margin: 20px 0 0 6%; */
+    height: 620px;
+    /* penser à chnager la valeur avec media queries */
+    max-width: 640px;
+    background: linear-gradient(90deg, #f2de2d 0%, #f2cb9d 80%);
+    clip-path: polygon(6% 4%, 94% 9%, 93% 88%, 2% 90%);
+    opacity: 0.9;
+}
+
+.titleformation {
+    color: #0f0f20;
+    text-align: center;
+}
+
+#formation p {
+    color: #0f0f20;
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+#formation .exp {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* ******************************************HOBBIES********************************************* */
+
+#hobbies {
+    margin: 640px 15% 180px 15%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: #0f0f20;
+    opacity: 0.9;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.5),
+        -8px 8px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.titlehobbies {
+    text-align: center;
+}
+
+.pictures {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1px 2px 30px 2px;
+}
+
+.flip-box-back div {
+    margin: auto;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.flip-box-back p {
+    text-transform: uppercase;
+    margin: 50%;
+    font-size-adjust: none;
+    color: #0f0f20;
+}
+
+.flip-box-back {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-box {
+    overflow: hidden;
+    background-color: transparent;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* ************************************** MEDIA QUERIES *********************************************** */
+
+@media screen and (min-width: 700px) {
+    #qualités {
+        width: 47%;
+        padding: 90px 80px 90px 20px;
+    }
+
+    #formation {
+        width: 45%;
+        padding: 90px 60px 90px 60px;
+        top: -200px;
+    }
+
+    .skill>* {
+        margin: 0 10px;
+        flex: 1;
+    }
+
+    .xppro>* {
+        margin: 0 10px;
+        flex: 1;
+    }
+
+
+}
