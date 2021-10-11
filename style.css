@@ -245,12 +245,12 @@ a[href^="tel:"]:hover {
 
 }
 
-a[href^="./media/Simon CV.pdf"] {
+a[href^="./media/simoncv.pdf"] {
     font-family: sans-serif;
     color: #0f0f20;
 }
 
-a[href^="./media/Simon CV.pdf"]:hover {
+a[href^="./media/simoncv.pdf"]:hover {
     color: #0f0f20;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
